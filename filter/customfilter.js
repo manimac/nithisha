@@ -9,7 +9,8 @@ app.filter('convertToDollar',function($rootScope){
 })
 
 app.filter('toUpperCase',function(){
-    return function(item){
+    return function(item){ 
+        
         return item.toUpperCase();
     }
 })
