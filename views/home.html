@@ -13,6 +13,35 @@
     </div>
     {{username|toUpperCase}}
     {{location}}
+
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Id</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="stu in students">
+                <td>{{stu.Name}}</td>
+                <td>{{stu.age}}</td>
+                <td>{{stu.userId}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Id</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="stu in students2">
+                <td>{{stu.Name}}</td>
+                <td>{{stu.age}}</td>
+                <td>{{stu.userId}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
 <div ng-controller="landing2">
     landing 2 page  {{pagename}}
