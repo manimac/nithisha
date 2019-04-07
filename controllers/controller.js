@@ -36,6 +36,6 @@ app.controller('landing2',function(service1,$scope,$rootScope){
     })
 })
 
-app.controller('aboutController',function(service1,$scope,$rootScope){
-   
+app.controller('directiveController',function($scope,$state){
+    $scope.currentState = $state.current.name;
 })

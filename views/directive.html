@@ -1,1 +1,4 @@
-<div>Test content from directive</div>
+<div ng-controller="directiveController">
+<a ui-sref="home" ng-class="{'active' : currentState=='home'}">Home</a>
+<a ui-sref="about" ng-class="{'active' : currentState=='about'}">About</a>
+</div>
